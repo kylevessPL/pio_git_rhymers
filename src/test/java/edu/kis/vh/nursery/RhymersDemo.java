@@ -1,7 +1,5 @@
 package edu.kis.vh.nursery;
 
-import edu.kis.vh.nursery.defaultCountingOutRhymer;
-import edu.kis.vh.nursery.HanoiRhymer;
 import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import edu.kis.vh.nursery.factory.Rhymersfactory;
 
@@ -12,10 +10,10 @@ class RhymersDemo {
 		Rhymersfactory factory = new DefaultRhymersFactory();
 
 		defaultCountingOutRhymer[] rhymers = {
-				factory.GetStandardRhymer(),
-				factory.GetFalseRhymer(),
-				factory.GetFIFORhymer(),
-				factory.GetHanoiRhymer()
+				factory.getStandardRhymer(),
+				factory.getFalseRhymer(),
+				factory.getFIFORhymer(),
+				factory.getHanoiRhymer()
 		};
 
 //		Alt + ← oraz Alt + → powodują przełączanie między oknami (np. otwartymi plikami klas Javy)
