@@ -5,6 +5,10 @@ public class DefaultCountingOutRhymer {
 	private static final int MINUS_ONE = -1;
 	private final int[] numbers = new int[12];
 
+	public void setTotal(int total) {
+		this.total = total;
+	}
+
 	private int total = MINUS_ONE;
 
 	public void countIn(int in) {
