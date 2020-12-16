@@ -7,9 +7,9 @@ class RhymersDemo {
 
 	public static void main(String[] args) {
 
-		RhymersFactory factory = new DefaultRhymersFactory();
+		final RhymersFactory factory = new DefaultRhymersFactory();
 
-		DefaultCountingOutRhymer[] rhymers = {
+		final DefaultCountingOutRhymer[] rhymers = {
 				factory.getStandardRhymer(),
 				factory.getFalseRhymer(),
 				factory.getFIFORhymer(),
@@ -24,7 +24,7 @@ class RhymersDemo {
 			}
 		}
 
-		java.util.Random rn = new java.util.Random();
+		final java.util.Random rn = new java.util.Random();
 
 		for (int i = 1; i < 15; i++) {
 			rhymers[3].countIn(rn.nextInt(20));
